@@ -1,7 +1,6 @@
 <?php
 
-if (!function_exists('btoast'))
-{
+if (! function_exists('btoast')) {
     /**
      * @param null $message
      * @param null $title
@@ -13,13 +12,13 @@ if (!function_exists('btoast'))
     function btoast($message = null, $level = 'light', $title = null, $subtitle = null)
     {
         $instance = app('btoast');
-        if (!isset($instance)) {
+        if (! isset($instance)) {
             $instance = app()->make('Manuelgeek\LaravelBToast\BToast');
         }
-        if (!is_null($message)) {
-            return $instance->message($message, $level, $title, $subtitle );
+        if (! is_null($message)) {
+            return $instance->message($message, $level, $title, $subtitle);
         }
+
         return $instance;
     }
 }
-
