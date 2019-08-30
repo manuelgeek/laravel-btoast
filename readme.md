@@ -123,8 +123,10 @@ If you discover any security related issues, please email emashmagak@appslab.co.
 
 ## Credits
 
-- [Manuel Geek][link-author]
-- [All Contributors][link-contributors]
+- [ManuEl Geek][link-author]
+
+
+[<img width=200 src="https://appslab.co.ke/assets/img/logo.png">](https://appslab.co.ke) 
 
 ## License
 
@@ -140,4 +142,3 @@ MIT. Please see the [license file](license.md) for more information.
 [link-travis]: https://travis-ci.org/manuelgeek/laravel-btoast
 [link-styleci]: https://styleci.io/repos/12345678
 [link-author]: https://github.com/manuelgeek
-[link-contributors]: ../../contributors
