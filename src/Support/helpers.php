@@ -12,14 +12,11 @@ if (!function_exists('btoast'))
      */
     function btoast($message = null, $level = 'light', $title = null, $subtitle = null)
     {
-        \Log::error('here1');
         $instance = app('btoast');
         if (!isset($instance)) {
-            \Log::error('here2');
             $instance = app()->make('Manuelgeek\LaravelBToast\BToast');
         }
         if (!is_null($message)) {
-            \Log::error('here3');
             return $instance->message($message, $level, $title, $subtitle );
         }
         return $instance;
