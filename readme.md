@@ -123,12 +123,6 @@ btoast()->clear();
 
 Please see the [changelog](changelog.md) for more information on what has changed recently.
 
-## Testing
-
-``` bash
-$ composer test
-```
-
 ## Contributing
 
 Please see [contributing.md](contributing.md) for details and a todolist.
