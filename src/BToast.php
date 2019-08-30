@@ -1,12 +1,9 @@
 <?php
 
-
 namespace Manuelgeek\LaravelBtoast;
-
 
 class BToast
 {
-
     /**
      * The current toasts.
      *
@@ -33,16 +30,16 @@ class BToast
 //        $this->position = config('laravel-btoast.position', 'top-right');
 //    }
 
-
     /**
      * @param $message
      * @param null $title
      * @param null $subtitle
      * @return $this
      */
-    public function info($message, $title = null, $subtitle = null )
+    public function info($message, $title = null, $subtitle = null)
     {
         $this->message($message, 'info', $title, $subtitle);
+
         return $this;
     }
 
@@ -52,9 +49,10 @@ class BToast
      * @param null $subtitle
      * @return $this
      */
-    public function success($message, $title = null, $subtitle = null )
+    public function success($message, $title = null, $subtitle = null)
     {
         $this->message($message, 'success', $title, $subtitle);
+
         return $this;
     }
 
@@ -67,6 +65,7 @@ class BToast
     public function error($message, $title = null, $subtitle = null)
     {
         $this->message($message, 'danger', $title, $subtitle);
+
         return $this;
     }
 
@@ -79,6 +78,7 @@ class BToast
     public function secondary($message, $title = null, $subtitle = null)
     {
         $this->message($message, 'secondary', $title, $subtitle);
+
         return $this;
     }
 
@@ -91,12 +91,14 @@ class BToast
     public function dark($message, $title = null, $subtitle = null)
     {
         $this->message($message, 'dark', $title, $subtitle);
+
         return $this;
     }
 
     public function light($message, $title = null, $subtitle = null)
     {
         $this->message($message, 'light', $title, $subtitle);
+
         return $this;
     }
 
@@ -111,6 +113,7 @@ class BToast
     public function warning($message, $title = null, $subtitle = null)
     {
         $this->message($message, 'warning', $title, $subtitle);
+
         return $this;
     }
 
@@ -130,8 +133,10 @@ class BToast
 //            'autohide' => $this->autohide,
         ]);
         $this->flash();
+
         return $this;
     }
+
     /**
      * Clear all pending toasts from the session.
      *
@@ -141,6 +146,7 @@ class BToast
     {
         $this->toasts = [];
         $this->flash();
+
         return $this;
     }
 

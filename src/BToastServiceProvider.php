@@ -2,14 +2,10 @@
 
 namespace Manuelgeek\LaravelBtoast;
 
-
 use Illuminate\Support\ServiceProvider;
 
 class BToastServiceProvider extends ServiceProvider
 {
-    /**
-     *
-     */
     public function boot()
     {
         $this->publishes([
@@ -18,12 +14,9 @@ class BToastServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../views' => base_path('resources/views/vendor/btoast'),
         ], 'views');
-        $this->loadViewsFrom(__DIR__ . '/../views', 'btoast');
+        $this->loadViewsFrom(__DIR__.'/../views', 'btoast');
     }
 
-    /**
-     *
-     */
     public function register()
     {
         $this->mergeConfigFrom(
@@ -40,17 +33,13 @@ class BToastServiceProvider extends ServiceProvider
         $this->app->bind('B_Toast', function () {
             return $this->app->make(BToast::class);
         });
-
     }
 
-    /**
-     *
-     */
     private function registerHelper()
     {
         $file = __DIR__.'/Support/helpers.php';
-        if (file_exists($file)){
-            require_once($file);
+        if (file_exists($file)) {
+            require_once $file;
         }
     }
 }
