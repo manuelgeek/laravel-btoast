@@ -1,6 +1,6 @@
 {
     "name": "manuelgeek/laravel-btoast",
-    "description": ":A bootstrap 4 toast wrapper for Laravel",
+    "description": "A bootstrap 4 toast wrapper for Laravel",
     "license": "MIT",
     "authors": [
         {
