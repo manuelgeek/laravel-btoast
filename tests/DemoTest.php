@@ -1,6 +1,5 @@
 <?php
 
-
 class DemoTest extends \Tests\TestCase
 {
     public function testSomethingIsTrue()
@@ -10,11 +9,8 @@ class DemoTest extends \Tests\TestCase
 
     public function testClassRegistered()
     {
-        $this->app->singleton(\Manuelgeek\LaravelBtoast\BToast::class, function()
-        {
+        $this->app->singleton(\Manuelgeek\LaravelBtoast\BToast::class, function () {
             return $this->assertTrue(true);
         });
     }
-
-
 }
