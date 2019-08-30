@@ -40,6 +40,22 @@ composer require manuelgeek/laravel-btoast
 
 **7.** *Optional*: Modify the published views located at `resources/views/vendor/btoast` to your preference.
 
+## Configuration
+Open `config/laravel-btoast.php` to adjust package configuration. If this file doesn't exist, run `php artisan vendor:publish --provider="Manuelgeek\LaravelBtoast\BToastServiceProvider" --tag="config"` to create the default configuration file.
+
+```php
+return [
+    'animation' => false,
+
+    'autohide' => true,
+
+    'delay' => 4000,
+
+    'position' => 'top-right', // top-left, bottom-right, bottom-left, center,bottom-center, top-center
+
+];
+
+```
 
 ## Usage
 
