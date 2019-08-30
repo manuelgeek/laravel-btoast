@@ -135,7 +135,7 @@ MIT. Please see the [license file](license.md) for more information.
 [ico-version]: https://img.shields.io/packagist/v/manuelgeek/laravel-btoast.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/manuelgeek/laravel-btoast.svg?style=flat-square
 [ico-travis]: https://img.shields.io/travis/manuelgeek/laravel-btoast/master.svg?style=flat-square
-[ico-styleci]: https://styleci.io/repos/12345678/shield
+[ico-styleci]: https://github.styleci.io/repos/205424931/shield?branch=master
 
 [link-packagist]: https://packagist.org/packages/manuelgeek/laravel-btoast
 [link-downloads]: https://packagist.org/packages/manuelgeek/laravel-btoast
