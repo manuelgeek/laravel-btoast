@@ -30,7 +30,7 @@ composer require manuelgeek/laravel-btoast
   ),
   ```
 
-**3.** Include `@include('toast::messages')`in your layout template.
+**3.** Include `@include('btoast::messages')`in your layout template.
 
 **4.** *Optional*: Run `php artisan vendor:publish --provider="Manuelgeek\LaravelBtoast\BToastServiceProvider" --tag="config"` to publish the config file.
 
