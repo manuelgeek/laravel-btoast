@@ -22,8 +22,8 @@ class BToastServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(
             __DIR__.'/../config/laravel-btoast.php', 'laravel-btoast'
         );
-        $this->app->singleton('btoast', 'Manuelgeek\LaravelBtoast\BToast');
-        $this->app->make('Manuelgeek\LaravelBtoast\BToast');
+        $this->app->singleton('btoast', 'Manuelgeek\LaravelBToast\BToast');
+        $this->app->make('Manuelgeek\LaravelBToast\BToast');
         $this->registerFacades();
         $this->registerHelper();
     }
