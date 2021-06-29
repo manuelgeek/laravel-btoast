@@ -127,10 +127,10 @@ class BToast
             'subtitle' => $subtitle,
             'level' => $level,
             'title' => $title,
-//            'position' => $this->position,
-//            'animation' => $this->animation,
-//            'delay' => $this->delay,
-//            'autohide' => $this->autohide,
+            //            'position' => $this->position,
+            //            'animation' => $this->animation,
+            //            'delay' => $this->delay,
+            //            'autohide' => $this->autohide,
         ]);
         $this->flash();
 
