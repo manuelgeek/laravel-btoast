@@ -2,11 +2,12 @@
 
 if (! function_exists('btoast')) {
     /**
-     * @param null $message
-     * @param null $title
-     * @param null $subtitle
-     * @param string $level
+     * @param  null  $message
+     * @param  null  $title
+     * @param  null  $subtitle
+     * @param  string  $level
      * @return \Illuminate\Contracts\Foundation\Application|mixed
+     *
      * @throws \Illuminate\Contracts\Container\BindingResolutionException
      */
     function btoast($message = null, $level = 'light', $title = null, $subtitle = null)

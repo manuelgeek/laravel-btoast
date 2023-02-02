@@ -32,8 +32,8 @@ class BToast
 
     /**
      * @param $message
-     * @param null $title
-     * @param null $subtitle
+     * @param  null  $title
+     * @param  null  $subtitle
      * @return $this
      */
     public function info($message, $title = null, $subtitle = null)
@@ -45,8 +45,8 @@ class BToast
 
     /**
      * @param $message
-     * @param null $title
-     * @param null $subtitle
+     * @param  null  $title
+     * @param  null  $subtitle
      * @return $this
      */
     public function success($message, $title = null, $subtitle = null)
@@ -58,8 +58,8 @@ class BToast
 
     /**
      * @param $message
-     * @param null $title
-     * @param null $subtitle
+     * @param  null  $title
+     * @param  null  $subtitle
      * @return $this
      */
     public function error($message, $title = null, $subtitle = null)
@@ -71,8 +71,8 @@ class BToast
 
     /**
      * @param $message
-     * @param null $title
-     * @param null $subtitle
+     * @param  null  $title
+     * @param  null  $subtitle
      * @return $this
      */
     public function secondary($message, $title = null, $subtitle = null)
@@ -84,8 +84,8 @@ class BToast
 
     /**
      * @param $message
-     * @param null $title
-     * @param null $subtitle
+     * @param  null  $title
+     * @param  null  $subtitle
      * @return $this
      */
     public function dark($message, $title = null, $subtitle = null)
@@ -105,9 +105,9 @@ class BToast
     /**
      * Create a warning message.
      *
-     * @param string $message
-     * @param string $title
-     * @param null $subtitle
+     * @param  string  $message
+     * @param  string  $title
+     * @param  null  $subtitle
      * @return $this
      */
     public function warning($message, $title = null, $subtitle = null)
@@ -127,10 +127,10 @@ class BToast
             'subtitle' => $subtitle,
             'level' => $level,
             'title' => $title,
-//            'position' => $this->position,
-//            'animation' => $this->animation,
-//            'delay' => $this->delay,
-//            'autohide' => $this->autohide,
+            //            'position' => $this->position,
+            //            'animation' => $this->animation,
+            //            'delay' => $this->delay,
+            //            'autohide' => $this->autohide,
         ]);
         $this->flash();
 
